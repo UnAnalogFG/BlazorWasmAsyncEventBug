@@ -34,9 +34,9 @@
 
     public async Task ClickHttpAsyncAwait()
     {
-        await Http.GetAsync(uri);
+        var response = await Http.GetAsync(uri);
         count++;
-        Data = new TestData("HttpAA",count);
+        Data = new TestData("HttpAA",(int)response.StatusCode+count);
     }
 
     public async Task Click()
