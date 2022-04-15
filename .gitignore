@@ -1,0 +1,16 @@
+*/obj/
+*/bin/
+*/tmp/*
+/.vs/
+/Server/Credentials/google.json
+*.sln.DotSettings.user
+*.Development.json
+*.development.json
+*/bin/
+*/obj/
+/createBackup.ps1
+/delBin.ps1
+/GLAdmin.Server/Credentials/google.development_env.json
+/GLAdmin.Server/Properties/PublishProfiles/registry.hub.docker.com_flolexic.pubxml.user
+/GLAdmin.Server/appsettings.Development-store.json
+/_Settings/appsettings.UnitTest.json
