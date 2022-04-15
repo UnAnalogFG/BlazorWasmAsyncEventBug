@@ -39,10 +39,11 @@
         Data = new TestData("HttpAA",count);
     }
 
-    public void Click()
+    public async Task Click()
     {
+        await InvokeAsync(()=>{});
         count++;
-        Data = new TestData("Sync",count);
+        Data = new TestData("Normal",count);
     }
 
     public void Change()
