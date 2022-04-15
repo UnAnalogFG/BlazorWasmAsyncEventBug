@@ -24,7 +24,7 @@
 @code {
     private const string uri = @"https://postman-echo.com/response-headers?foo1=bar1&access-control-allow-origin=*";
 
-    private static int count = 0;
+    private int count = 0;
     private TestData? Data { get; set; }
 
     protected override void OnInitialized()
@@ -41,17 +41,9 @@
 
     public async Task Click()
     {
-        await InvokeAsync(()=>{});
+        await InvokeAsync(()=>{Thread.Sleep(1000);});
         count++;
         Data = new TestData("Normal",count);
-    }
-
-    public void Change()
-    {
-        if (Data != null)
-        {
-            Data.Value++;
-        }
     }
 }
 
